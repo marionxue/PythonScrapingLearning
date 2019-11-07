@@ -8,13 +8,13 @@ try:
 except HTTPError as e:
 	print(e)
 
-else:
+# else:
 if html is None:
 	print("URL is not found")
 
 else:
 
-bsObj = BeautifulSoup(html.read(), "html.parser")
+	bsObj = BeautifulSoup(html.read(), "html.parser")
 
 print(bsObj.h1)
 
